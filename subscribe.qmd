@@ -1,0 +1,40 @@
+---
+title: "Subscribe"
+---
+
+```{r setup, include = FALSE}
+cfg <- yaml::read_yaml("config.yml"); sub <- cfg$subscribe
+site <- if (nzchar(cfg$site_url)) sub("/$", "", cfg$site_url) else "."
+form <- function(slug, feed, label) {
+  if (is.null(slug) || !nzchar(slug)) return(sprintf(
+    '<div class="subscribe-box"><p class="subscribe-note">Email sign-up opens when the mailing list is connected. Until then, follow the feed in a reader or through a feed-to-email service:</p><p><a href="%s">%s/%s</a></p></div>', feed, site, feed))
+  sprintf('<div class="subscribe-box"><form action="https://buttondown.com/api/emails/embed-subscribe/%s" method="post" target="_blank" class="subscribe-form">
+<label for="bd-email-%s">Email address</label>
+<input type="email" name="email" id="bd-email-%s" placeholder="you@example.org" required>
+<input type="submit" value="%s">
+</form><p class="subscribe-note">One email per entry, sent by Buttondown; unsubscribe from any email. Or follow the feed directly: <a href="%s">%s/%s</a></p></div>',
+    slug, slug, slug, label, feed, site, feed)
+}
+```
+
+Two kinds of message are produced, and each can be received by email or followed as a feed.
+
+## Alerts
+
+An alert is raised when the online filter judges that a currency's basket regime has probably changed, or when the variance detector judges that the width of its band has fallen or risen. Each entry gives the country, the currency, the date, the rule, the probability or the direction, and the most probable start of the new regime. An alert is logged once and never revised, because the procedures that produce it use only the data available on the day.
+
+```{r alerts-form, echo = FALSE, results = "asis"}
+cat(form(sub$alerts, "feeds/alerts.xml", "Subscribe to alerts"))
+```
+
+## Revisions
+
+A revision is a retrospective change between two builds: a dated break that was added, removed or moved by more than a week when the regimes were re-dated with new data, a change in a country's status, or a correction to the published data. Readers who use the dated breaks in their own work can follow this to learn when a break they rely on has changed.
+
+```{r revisions-form, echo = FALSE, results = "asis"}
+cat(form(sub$revisions, "feeds/revisions.xml", "Subscribe to revisions"))
+```
+
+## How the email works
+
+The site is rebuilt on a schedule; each build appends new entries to the two feeds. A newsletter service reads the feeds and sends every new entry to the addresses on its list, so an email arrives within a few hours of a build. The feeds themselves are plain Atom files that any feed reader can follow; readers who prefer a digest can use a feed-to-email service such as [Blogtrottr](https://blogtrottr.com) or [Feedrabbit](https://feedrabbit.com) with the feed addresses above.

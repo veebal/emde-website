@@ -1,0 +1,85 @@
+---
+title: "Methodology"
+---
+
+## The regression
+
+For each currency the weekly log return, in per cent, is regressed on the returns of four anchor currencies, all measured against the New Zealand dollar as numeraire [@frankel1994yen; @zeileis2010testing]:
+
+$$
+r_t = \alpha + \beta_{\mathrm{USD}}\, x_{\mathrm{USD},t} + \beta_{\mathrm{JPY}}\, x_{\mathrm{JPY},t} + \beta_{\mathrm{EUR}}\, x_{\mathrm{EUR},t} + \beta_{\mathrm{GBP}}\, x_{\mathrm{GBP},t} + \varepsilon_t,
+\qquad \varepsilon_t \sim (0, \sigma^2).
+$$
+
+The parameter vector $\theta = (\alpha, \beta, \sigma^2)$ describes a regime. A weight on the US dollar near one with a small $\sigma^2$ is a dollar peg; small weights and a large $\sigma^2$ describe a float. The residual variance is part of the regime, because a change in the width of the band is a change of regime. Daily bilateral rates against the US dollar come from the Bank for International Settlements [@bisdata], are converted to the numeraire and aggregated to Friday closes. The sample starts in January 1995.
+
+## Dating regimes with hindsight
+
+With the whole sample in hand, the breaks between regimes are placed by the segmented regression of @bai1998estimating and @bai2003computation. For $m$ breaks $\tau_1 < \dots < \tau_m$ the sample splits into $m+1$ segments, each with its own $\theta_i$ estimated by maximum likelihood on $n_i$ observations, and the break dates minimise the total negative log-likelihood
+
+$$
+\sum_{i=0}^{m} \frac{n_i}{2}\left[\log\left(2\pi\hat\sigma_i^2\right) + 1\right]
+\qquad \text{subject to } n_i \ge h,
+$$
+
+by dynamic programming over all admissible partitions. The number of breaks is chosen by the Schwarz criterion, with $k+2$ parameters per segment and one per break date:
+
+$$
+\mathrm{BIC}(m) = 2\sum_{i=0}^{m}\mathrm{nll}_i + \big[(k+2)(m+1) + m\big]\log n, \qquad \hat m = \arg\min_{0 \le m \le 10}\mathrm{BIC}(m),
+$$
+
+with $k = 4$ anchors, a minimum segment length $h = 26$ weeks and at most ten breaks. This is the procedure of @zeileis2010testing, as implemented in the R package `fxregime` and in its Julia port `FXRegime.jl`, which the site uses. Dating is retrospective: each new week of data re-dates the whole history, so a break can move, appear or disappear between builds. Those changes are logged and published in the [revisions feed](feeds/revisions.xml).
+
+## Detecting a new regime online
+
+The dating cannot say, in real time, whether the regime in force has ended. For that the site runs the Bayesian online change-point filter of @adams2007bayesian on the same regression. Let $r_t$ be the run length: the number of weeks since the last change. Conditional on a run of length $r$, the regression on the last $r$ observations has the conjugate normal-inverse-gamma prior
+
+$$
+\beta \mid \sigma^2 \sim N\!\left(\mu_0,\ \sigma^2 \Lambda_0^{-1}\right), \qquad \sigma^2 \sim \mathrm{IG}(a_0, b_0),
+$$
+
+so that after $n$ observations with design matrix $X$ and response $y$ the posterior has $\Lambda_n = \Lambda_0 + X'X$, $\mu_n = \Lambda_n^{-1}(\Lambda_0\mu_0 + X'y)$, $a_n = a_0 + n/2$ and $b_n = b_0 + \tfrac12\left(y'y + \mu_0'\Lambda_0\mu_0 - \mu_n'\Lambda_n\mu_n\right)$, and the predictive density of the next observation is Student-$t$ with $2a_n$ degrees of freedom, location $x'\mu_n$ and scale $\frac{b_n}{a_n}\left(1 + x'\Lambda_n^{-1}x\right)$. A new regime begins each week with constant hazard $H = 1/\lambda$. The run-length posterior is updated by
+
+$$
+P(r_t = r_{t-1} + 1 \mid y_{1:t}) \propto (1 - H)\, P(r_{t-1} \mid y_{1:t-1})\, \pi\!\left(y_t \mid r_{t-1}\right), \qquad
+P(r_t = 0 \mid y_{1:t}) \propto H \sum_{r_{t-1}} P(r_{t-1} \mid y_{1:t-1})\, \pi\!\left(y_t \mid r_{t-1}\right),
+$$
+
+where $\pi(y_t \mid r)$ is the predictive density under a run of length $r$. The quantity shown on every country page is $P(r_t < k \mid y_{1:t})$, the probability that the current regime is younger than $k = 26$ weeks. Posterior-mean basket weights are the mixture over run lengths of the $\mu_n$.
+
+### The likelihood weight
+
+Weekly currency returns have heavy tails, and under the conjugate update a single extreme week carries full weight: it can move the coefficients of every run at once and lift the probability of a change on its own. The site therefore uses a weighted update in the manner of generalised Bayesian inference [@bissiri2016general; @altamirano2023robust]. Let $u$ be the standardised residual of the week's observation under a run's own Student-$t$ predictive, the distance between the observation and the predictive location divided by the predictive scale. The observation enters that run's sufficient statistics with the weight
+
+$$
+w(u) = \frac{1}{1 + (u/c)^2}, \qquad c = 2,
+$$
+
+so that an observation two predictive scales from its expected value counts as half an observation and one six scales away as a tenth. The run-length recursion itself is unchanged: the predictive density that compares runs is computed before the weight is applied, so the evidence for a change still accumulates, but it has to come from several weeks rather than one. The weight is the same for every currency and every run, and nothing reported for week $t$ uses data after $t$.
+
+The hyperparameters $\mu_0$, $\Lambda_0$, $a_0$, $b_0$ and $\lambda$ are fixed numbers, set once from the pooled dated regimes of all countries: the prior mean and spread of the coefficients are their pooled median and median absolute deviation, the prior on $\sigma^2$ has its mean at the pooled median of the regime variances, and $\lambda$ is the mean dated regime length. They are not re-estimated at build time. Nothing reported for week $t$ uses data after $t$, so the probabilities shown are never revised; new data only extend the series.
+
+### The alert rule
+
+An alert fires at the first week of a spell of two consecutive weeks in which $P(r_t < 26)$ is at least 0.5, with at most one alert every 26 weeks. The alert reports the most probable start date of the new regime, the mode of the run-length posterior. This is the probability rule; alerts are logged once and published in the [alerts feed](feeds/alerts.xml), where each entry names its rule.
+
+### The variance alert
+
+The run-length posterior responds to a change in the basket weights more readily than to a change in the residual variance alone, and a narrowing of the band in particular leaves the weekly predictive densities close to those of the regime in force. A second detector therefore watches the variance directly, following the e-detector framework of @shin2024edetectors. Each week the one-step residual, the return less the filter's posterior-mean prediction from the previous week, is squared and divided by a reference variance: the median squared residual of the preceding 52 weeks divided by 0.4549, the median of a chi-squared variable with one degree of freedom, so that the ratio has mean one when the variance has not changed. Two CUSUM statistics are run on this ratio, one against the alternative that the variance has fallen to a third of its reference value and one against the alternative that it has risen to three times that value; in the upward statistic the ratio is capped at nine so that a single outlier cannot raise an alarm. Each statistic is the running maximum of a log-likelihood ratio reset at zero, and an alert fires when either exceeds $\log 520$. With the pre-change variance known, this threshold gives an average run length to a false alarm of at least 520 weeks, ten years, in each direction. After an alert both statistics restart, and at most one variance alert fires every 26 weeks. The alert reports the direction of the change, a fall (the band narrowed) or a rise (the band widened), and claims that the change lies within the previous 26 weeks. The two statistics and the alerts are shown on every country page below the probability chart.
+
+### Statuses
+
+A country's status on the home page is "New regime" if a probability alert fired within the last 26 weeks; "Variance change" if only a variance alert fired within the last 26 weeks; "Change likely" if the probability is above the threshold but the spell is not yet complete; "Stable" otherwise; "Data ended" if the published series stops more than a year before the newest data on the site; and "Not available" if the filter could not be run for that currency.
+
+## Why the fluctuation-test monitor is not used
+
+An earlier version of this site monitored the current regime with the score-based fluctuation test of @zeileis2005monitoring: parameters estimated on a history period and frozen, and the cumulative score process compared with a linear boundary. In simulation under a constant regime, with a history of one year, the boundary is crossed in far more than the nominal share of cases, and the share rises with the length of the monitoring period. The procedure's asymptotic critical values require a history of several hundred weeks and a bounded monitoring horizon, neither of which an open-ended weekly monitor provides. The online filter above replaces it.
+
+## Implementation and reproducibility
+
+All computation is in Julia: the BIS download, the weekly returns, the dating (the package `FXRegime.jl`, a port of the R package `fxregime` that gives the same break dates and coefficients), the online filter, the variance detector, the alerts, the statuses and the revisions. One build writes everything to a single SQLite database, from which the pages are rendered; the filter's output and the alerts are only ever appended to, and every build's dating is kept, so revisions and earlier vintages can be recovered. Every country page offers its dated-regime table and the filter output as CSV. The code, including a script that reproduces the dating and the filter of any one currency from the stored returns (`julia/reproduce.jl`), is in the site's repository.
+
+## References
+
+::: {#refs}
+:::

@@ -1,0 +1,11 @@
+/.quarto/
+**/*.quarto_ipynb
+/_site/
+# the database and everything derived from it at build or render time
+/data/err.sqlite
+/data/err.sqlite-*
+/data/export/
+/data/raw/
+/countries/*/*.csv
+/err_status.csv
+/err_regimes_all.csv

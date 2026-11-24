@@ -1,20 +1,77 @@
 ---
-title: "EMDE Homepage"
+title: "Exchange rate regimes"
+toc: false
 ---
 
-Welcome to the EMDE project website. Each cell below shows the explanatory power (R²) of the currency-basket regression within one estimated exchange-rate regime. Use the sidebar to open a country page, or see [About](about.qmd) for the methodology and references.
-
-```{r landing}
+```{r setup}
 #| echo: false
 #| message: false
 #| warning: false
+pacman::p_load(DBI, RSQLite, jsonlite, dplyr, ggplot2, scales, plotly, knitr, htmlwidgets)
+source("R/db.R"); source("R/plots.R")
+con <- err_con()
+B   <- latest_build(con); bc <- bocpd_settings(con, B$build_id); k <- bc$alert$k
+st  <- status_all(con, B$build_id)
+reg <- regimes_all(con, B$build_id)
+ev  <- events_all(con)
+n_new <- sum(st$status == "New regime"); n_var <- sum(st$status == "Variance change"); n_likely <- sum(st$status == "Change likely"); n_stable <- sum(st$status == "Stable"); n_ended <- sum(st$status == "Data ended")
+# the two downloadable tables are written from the database at render time
+write.csv(st[, c("iso3", "country", "ccy", "status", "regime_since", "usd_weight", "r2", "p_change_26", "online_start", "online_usd_weight", "last_prob_alert_date", "last_var_alert_date", "last_var_direction", "last_obs")], "err_status.csv", row.names = FALSE)
+write.csv(reg[, c("iso3", "country", "ccy", "regime_no", "start_date", "end_date", "n_obs", "r2", "b_intercept", "b_usd", "b_jpy", "b_eur", "b_gbp", "variance")], "err_regimes_all.csv", row.names = FALSE)
+```
 
-pacman::p_load(dplyr, ggplot2, scales, plotly, knitr)
-source("R/plots.R")
-S <- readRDS("results/summary.rds")
-plot_timeline(S$regimes, S$order, S$events, "XKDRORGFILES/XKDR_Logomark_RGB_Full_Colour.png")
+Which major currencies does each emerging market currency track, when did that change, and is it changing now? For every country on the map the basket weights on the US dollar, the yen, the euro and sterling are estimated week by week, the dates at which the basket changed are dated with hindsight, and an online filter gives the current probability that a new regime has begun, and a second detector watches the width of the band. Hover over a country for its status; click to open its page. The [methodology](methods.qmd) page describes the procedures, and the [subscribe](subscribe.qmd) page offers two feeds: new alerts, and retrospective revisions.
+
+```{r map}
+#| echo: false
+#| message: false
+#| warning: false
+plot_map(st, k, "XKDRORGFILES/XKDR_Logomark_RGB_Full_Colour.png")
+```
+
+```{r legend}
+#| echo: false
+#| results: asis
+cat(map_legend())
+cat(sprintf("\n\nData to %s. %d countries: %d with a new regime, %d with a change in variance only, %d where a change is likely, %d stable, %d whose published series has ended.\n", format(as.Date(B$data_end)), nrow(st), n_new, n_var, n_likely, n_stable, n_ended))
+```
+
+## Status of every currency
+
+```{r status-table}
+#| echo: false
+#| results: asis
+status_table(st, k)
 ```
 
 ::: {.text-end style="margin-top: 10px;"}
-[Download all regimes as CSV](emde_regimes_all.csv){.btn .btn-outline-secondary .btn-sm download="emde_regimes_all.csv"}
+[Download the status table as CSV](err_status.csv){.btn .btn-outline-secondary .btn-sm download="err_status.csv"}
+[Download all dated regimes as CSV](err_regimes_all.csv){.btn .btn-outline-secondary .btn-sm download="err_regimes_all.csv"}
 :::
+
+## Latest alerts
+
+```{r alerts}
+#| echo: false
+#| results: asis
+alerts_table(alerts_all(con, n = 15), with_country = TRUE)
+```
+
+The full list is in the [alerts feed](feeds/alerts.xml). To receive new alerts, or revisions to the dating, by email, see [subscribe](subscribe.qmd).
+
+## Regime timeline
+
+Each cell is one dated regime, shaded by the explanatory power of the basket regression within it.
+
+```{r timeline}
+#| echo: false
+#| message: false
+#| warning: false
+plot_timeline(reg, st$iso3, ev, "XKDRORGFILES/XKDR_Logomark_RGB_Full_Colour.png")
+```
+
+```{r close}
+#| echo: false
+#| include: false
+DBI::dbDisconnect(con)
+```

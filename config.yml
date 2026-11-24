@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------
 # EMDE website configuration. This is the only file you need to edit.
-# After editing run:   Rscript build.R            (add --render to build the site)
+# After editing run:   julia --project=julia julia/build.jl   then   quarto render
 # ---------------------------------------------------------------------------
 
 # Settings applied to every country (override per country below).
@@ -22,59 +22,60 @@ anchor_areas:
   EUR: XM
   GBP: GB
 
-# BIS download: one small request per country/anchor, cached in data/raw/bis/.
+# BIS download: one small request per country/anchor, cached in data/raw/bis/. A cached file
+# fetched today is reused; `--refresh-data` forces a download, `--offline` never downloads.
 bis:
   from: 1990-01-01
 
-# Countries, as ISO2C codes. This order is the row order on the landing page.
-# A country can be a bare code or a code with overrides.
+# Countries. `code` is the BIS reference area (ISO2C), `iso3` the page folder, `ccy` the
+# currency explained, `name` and `region` the labels on the home page and in the sidebar.
+# This order is the row order on the landing page. Per-country overrides of `defaults`
+# (for example `start: 2000-01-01` or `breaks: 8`) can be added to an entry.
 countries:
-    - AE
-    - AL
-    - AR
-    - BA
-    - BG
-    - BH
-    - BN
-    - BR
-    - CL
-    - CN
-    - CO
-    - DZ
-    - HU
-    - ID
-    - IN
-    - IR
-    - KR
-    - KW
-    - KZ
-    - LK
-    - MA
-    - MK
-    - MU
-    - MX
-    - MY
-    - NP
-    - OM
-    - PE
-    - PH
-    - PK
-    - PL
-    - QA
-    - RO
-    - RS
-    - RU
-    - SA
-    - TH
-    - TN
-    - TR
-    - TT
-    - UA
-    - UY
-    - VE
-    - ZA
-  # - {code: PL, start: 2000-01-01}
-  # - {code: TR, breaks: 8}
+  - {code: AE, iso3: ARE, ccy: AED, name: "United Arab Emirates", region: "Middle East & North Africa"}
+  - {code: AL, iso3: ALB, ccy: ALL, name: "Albania", region: "Europe & Central Asia"}
+  - {code: AR, iso3: ARG, ccy: ARS, name: "Argentina", region: "Latin America & Caribbean"}
+  - {code: BA, iso3: BIH, ccy: BAM, name: "Bosnia & Herzegovina", region: "Europe & Central Asia"}
+  - {code: BG, iso3: BGR, ccy: BGN, name: "Bulgaria", region: "Europe & Central Asia"}
+  - {code: BH, iso3: BHR, ccy: BHD, name: "Bahrain", region: "Middle East & North Africa"}
+  - {code: BN, iso3: BRN, ccy: BND, name: "Brunei", region: "East Asia & Pacific"}
+  - {code: BR, iso3: BRA, ccy: BRL, name: "Brazil", region: "Latin America & Caribbean"}
+  - {code: CL, iso3: CHL, ccy: CLP, name: "Chile", region: "Latin America & Caribbean"}
+  - {code: CN, iso3: CHN, ccy: CNY, name: "China", region: "East Asia & Pacific"}
+  - {code: CO, iso3: COL, ccy: COP, name: "Colombia", region: "Latin America & Caribbean"}
+  - {code: DZ, iso3: DZA, ccy: DZD, name: "Algeria", region: "Middle East & North Africa"}
+  - {code: HU, iso3: HUN, ccy: HUF, name: "Hungary", region: "Europe & Central Asia"}
+  - {code: ID, iso3: IDN, ccy: IDR, name: "Indonesia", region: "East Asia & Pacific"}
+  - {code: IN, iso3: IND, ccy: INR, name: "India", region: "South Asia"}
+  - {code: IR, iso3: IRN, ccy: IRR, name: "Iran", region: "Middle East & North Africa"}
+  - {code: KR, iso3: KOR, ccy: KRW, name: "South Korea", region: "East Asia & Pacific"}
+  - {code: KW, iso3: KWT, ccy: KWD, name: "Kuwait", region: "Middle East & North Africa"}
+  - {code: KZ, iso3: KAZ, ccy: KZT, name: "Kazakhstan", region: "Europe & Central Asia"}
+  - {code: LK, iso3: LKA, ccy: LKR, name: "Sri Lanka", region: "South Asia"}
+  - {code: MA, iso3: MAR, ccy: MAD, name: "Morocco", region: "Middle East & North Africa"}
+  - {code: MK, iso3: MKD, ccy: MKD, name: "North Macedonia", region: "Europe & Central Asia"}
+  - {code: MU, iso3: MUS, ccy: MUR, name: "Mauritius", region: "Sub-Saharan Africa"}
+  - {code: MX, iso3: MEX, ccy: MXN, name: "Mexico", region: "Latin America & Caribbean"}
+  - {code: MY, iso3: MYS, ccy: MYR, name: "Malaysia", region: "East Asia & Pacific"}
+  - {code: NP, iso3: NPL, ccy: NPR, name: "Nepal", region: "South Asia"}
+  - {code: OM, iso3: OMN, ccy: OMR, name: "Oman", region: "Middle East & North Africa"}
+  - {code: PE, iso3: PER, ccy: PEN, name: "Peru", region: "Latin America & Caribbean"}
+  - {code: PH, iso3: PHL, ccy: PHP, name: "Philippines", region: "East Asia & Pacific"}
+  - {code: PK, iso3: PAK, ccy: PKR, name: "Pakistan", region: "South Asia"}
+  - {code: PL, iso3: POL, ccy: PLN, name: "Poland", region: "Europe & Central Asia"}
+  - {code: QA, iso3: QAT, ccy: QAR, name: "Qatar", region: "Middle East & North Africa"}
+  - {code: RO, iso3: ROU, ccy: RON, name: "Romania", region: "Europe & Central Asia"}
+  - {code: RS, iso3: SRB, ccy: RSD, name: "Serbia", region: "Europe & Central Asia"}
+  - {code: RU, iso3: RUS, ccy: RUB, name: "Russia", region: "Europe & Central Asia"}
+  - {code: SA, iso3: SAU, ccy: SAR, name: "Saudi Arabia", region: "Middle East & North Africa"}
+  - {code: TH, iso3: THA, ccy: THB, name: "Thailand", region: "East Asia & Pacific"}
+  - {code: TN, iso3: TUN, ccy: TND, name: "Tunisia", region: "Middle East & North Africa"}
+  - {code: TR, iso3: TUR, ccy: TRY, name: "Turkey", region: "Europe & Central Asia"}
+  - {code: TT, iso3: TTO, ccy: TTD, name: "Trinidad & Tobago", region: "Latin America & Caribbean"}
+  - {code: UA, iso3: UKR, ccy: UAH, name: "Ukraine", region: "Europe & Central Asia"}
+  - {code: UY, iso3: URY, ccy: UYU, name: "Uruguay", region: "Latin America & Caribbean"}
+  - {code: VE, iso3: VEN, ccy: VES, name: "Venezuela", region: "Latin America & Caribbean"}
+  - {code: ZA, iso3: ZAF, ccy: ZAR, name: "South Africa", region: "Sub-Saharan Africa"}
 
 # Vertical lines on the landing-page timeline.
 events:
@@ -85,5 +86,44 @@ events:
   - {label: "Russia-Ukraine War (Feb 2022)", date: 2022-02-01}
   - {label: "Trade War (Apr 2025)", date: 2025-04-01}
 
-# Parallel workers for fitting.
-cores: 24
+# Online change-point detection (Bayesian, Adams and MacKay 2007) on the same weekly
+# returns as the dating. Hyperparameters are fixed numbers estimated once from the pooled
+# dated regimes of all countries (empirical Bayes); they are not re-estimated at build time,
+# so past probabilities never change. Order of coefficients: intercept, then the regressors.
+bocpd:
+  mu0:      [0.028723017554355176, 0.8492871168904051, 1.26133552646777e-14, 0.07565136409071652, 0.00024952785133330305]     # prior mean of (intercept, USD, JPY, EUR, GBP), from the lab (bocpd_prior.csv)
+  prior_sd: [0.1380136981587279, 0.4768095105435485, 0.09293803158068946, 0.34765592021992153, 0.11355702676664692]     # prior standard deviation of each coefficient
+  a0: 3.0                 # inverse-gamma shape for the residual variance
+  b0: 0.6478429345100362              # inverse-gamma scale for the residual variance
+  lambda: 208.60802469135803           # expected regime length in weeks (hazard = 1 / lambda)
+  prune: 1.0e-10          # run lengths with less posterior mass than this are dropped
+  ks: [4, 8, 13, 26, 52]  # horizons k for which P(change within the last k weeks) is reported
+  alert:
+    k: 26                 # an alert concerns a change within the last k weeks ...
+    threshold: 0.5        # ... when its probability is at least this ...
+    persist: 2            # ... for this many consecutive weeks;
+    refractory: 26        # at most one alert per this many weeks
+  dsm:
+    c: 2.0                # likelihood weight 1 / (1 + (u/c)^2) on the standardised one-step residual u (robust engine)
+  variance:               # two-sided CUSUM e-detector on the squared standardised one-step residual
+    rho: 3.0              # alternative variance ratio: a fall to v/rho or a rise to rho*v
+    alpha: 0.001923       # 1/520: average run length to a false alarm of at least ten years per direction
+    ucap: 9.0             # cap on the squared standardised residual in the upward statistic
+    window: 52            # reference variance: median squared residual over the preceding weeks / 0.4549
+    claim: 26             # a variance alert claims the change lies within this many weeks
+  status:
+    recent_weeks: 26      # "New regime" / "Variance change" if an alert fired within this many weeks of the last observation
+    stale_weeks: 52       # "Data ended" if a country's series stops this many weeks before the newest data
+
+# Deployed address of the site, used for absolute links in the feeds. Leave empty until known.
+site_url: ""
+
+# Email sign-up. The site is static, so addresses are held by a newsletter service that sends each
+# new feed entry by email (RSS-to-email). Buttondown is the default: create one newsletter per feed,
+# set its RSS-to-email source to the feed address above, and put the newsletter usernames here.
+# While they are empty the subscribe page shows the feed addresses only.
+subscribe:
+  service: buttondown
+  alerts: ""              # Buttondown username of the alerts newsletter
+  revisions: ""           # Buttondown username of the revisions newsletter
+

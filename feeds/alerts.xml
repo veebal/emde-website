@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Exchange rate regimes: alerts</title>
+  <subtitle>Online alerts of a likely change in a currency's basket regime or in its residual variance</subtitle>
+  <link href="./feeds/alerts.xml" rel="self"/>
+  <id>./feeds/alerts.xml</id>
+  <updated>2026-11-24T00:00:00Z</updated>
+  <author><name>XKDR Forum</name></author>
+  <entry>
+    <title>Brazil (BRL): variance rose — the band widened (alert 2026-11-13)</title>
+    <link href="./countries/BRA/index.html"/>
+    <id>./alerts/variance/BRA/2026-11-13</id>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <summary>BRL: variance rose — the band widened (alert 2026-11-13). Rule: variance. The CUSUM statistic for a rise in the residual variance of the BRL crossed its threshold at the 2026-11-13 observation; the change is claimed to lie within the previous 26 weeks, from 2026-05-15.</summary>
+  </entry>
+  <entry>
+    <title>Algeria (DZD): variance rose — the band widened (alert 2026-10-30)</title>
+    <link href="./countries/DZA/index.html"/>
+    <id>./alerts/variance/DZA/2026-10-30</id>
+    <updated>2026-10-30T00:00:00Z</updated>
+    <summary>DZD: variance rose — the band widened (alert 2026-10-30). Rule: variance. The CUSUM statistic for a rise in the residual variance of the DZD crossed its threshold at the 2026-10-30 observation; the change is claimed to lie within the previous 26 weeks, from 2026-05-01.</summary>
+  </entry>
+  <entry>
+    <title>Uruguay (UYU): variance fell — the band narrowed (alert 2026-10-23)</title>
+    <link href="./countries/URY/index.html"/>
+    <id>./alerts/variance/URY/2026-10-23</id>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <summary>UYU: variance fell — the band narrowed (alert 2026-10-23). Rule: variance. The CUSUM statistic for a fall in the residual variance of the UYU crossed its threshold at the 2026-10-23 observation; the change is claimed to lie within the previous 26 weeks, from 2026-04-24.</summary>
+  </entry>
+  <entry>
+    <title>Mexico (MXN): variance rose — the band widened (alert 2026-10-16)</title>
+    <link href="./countries/MEX/index.html"/>
+    <id>./alerts/variance/MEX/2026-10-16</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <summary>MXN: variance rose — the band widened (alert 2026-10-16). Rule: variance. The CUSUM statistic for a rise in the residual variance of the MXN crossed its threshold at the 2026-10-16 observation; the change is claimed to lie within the previous 26 weeks, from 2026-04-17.</summary>
+  </entry>
+  <entry>
+    <title>South Korea (KRW): new exchange rate regime likely, 2026-09-25</title>
+    <link href="./countries/KOR/index.html"/>
+    <id>./alerts/KOR/2026-09-25</id>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <summary>KRW: new regime likely (alert 2026-09-25). Rule: probability. Probability 0.955 that the KRW regime changed within the last 26 weeks; most probable start of the new regime 2026-06-05. Alert fired at the 2026-09-25 observation.</summary>
+  </entry>
+  <entry>
+    <title>Argentina (ARS): variance fell — the band narrowed (alert 2026-09-18)</title>
+    <link href="./countries/ARG/index.html"/>
+    <id>./alerts/variance/ARG/2026-09-18</id>
+    <updated>2026-09-18T00:00:00Z</updated>
+    <summary>ARS: variance fell — the band narrowed (alert 2026-09-18). Rule: variance. The CUSUM statistic for a fall in the residual variance of the ARS crossed its threshold at the 2026-09-18 observation; the change is claimed to lie within the previous 26 weeks, from 2026-03-20.</summary>
+  </entry>
+  <entry>
+    <title>Argentina (ARS): new exchange rate regime likely, 2026-09-11</title>
+    <link href="./countries/ARG/index.html"/>
+    <id>./alerts/ARG/2026-09-11</id>
+    <updated>2026-09-11T00:00:00Z</updated>
+    <summary>ARS: new regime likely (alert 2026-09-11). Rule: probability. Probability 0.703 that the ARS regime changed within the last 26 weeks; most probable start of the new regime 2025-04-18. Alert fired at the 2026-09-11 observation.</summary>
+  </entry>
+  <entry>
+    <title>South Korea (KRW): variance rose — the band widened (alert 2026-09-04)</title>
+    <link href="./countries/KOR/index.html"/>
+    <id>./alerts/variance/KOR/2026-09-04</id>
+    <updated>2026-09-04T00:00:00Z</updated>
+    <summary>KRW: variance rose — the band widened (alert 2026-09-04). Rule: variance. The CUSUM statistic for a rise in the residual variance of the KRW crossed its threshold at the 2026-09-04 observation; the change is claimed to lie within the previous 26 weeks, from 2026-03-06.</summary>
+  </entry>
+  <entry>
+    <title>Peru (PEN): new exchange rate regime likely, 2026-09-04</title>
+    <link href="./countries/PER/index.html"/>
+    <id>./alerts/PER/2026-09-04</id>
+    <updated>2026-09-04T00:00:00Z</updated>
+    <summary>PEN: new regime likely (alert 2026-09-04). Rule: probability. Probability 0.659 that the PEN regime changed within the last 26 weeks; most probable start of the new regime 2026-03-06. Alert fired at the 2026-09-04 observation.</summary>
+  </entry>
+  <entry>
+    <title>Malaysia (MYR): new exchange rate regime likely, 2026-08-07</title>
+    <link href="./countries/MYS/index.html"/>
+    <id>./alerts/MYS/2026-08-07</id>
+    <updated>2026-08-07T00:00:00Z</updated>
+    <summary>MYR: new regime likely (alert 2026-08-07). Rule: probability. Probability 0.581 that the MYR regime changed within the last 26 weeks; most probable start of the new regime 2026-06-26. Alert fired at the 2026-08-07 observation.</summary>
+  </entry>
+  <entry>
+    <title>Peru (PEN): variance rose — the band widened (alert 2026-08-07)</title>
+    <link href="./countries/PER/index.html"/>
+    <id>./alerts/variance/PER/2026-08-07</id>
+    <updated>2026-08-07T00:00:00Z</updated>
+    <summary>PEN: variance rose — the band widened (alert 2026-08-07). Rule: variance. The CUSUM statistic for a rise in the residual variance of the PEN crossed its threshold at the 2026-08-07 observation; the change is claimed to lie within the previous 26 weeks, from 2026-02-06.</summary>
+  </entry>
+  <entry>
+    <title>Sri Lanka (LKR): variance rose — the band widened (alert 2026-07-31)</title>
+    <link href="./countries/LKA/index.html"/>
+    <id>./alerts/variance/LKA/2026-07-31</id>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <summary>LKR: variance rose — the band widened (alert 2026-07-31). Rule: variance. The CUSUM statistic for a rise in the residual variance of the LKR crossed its threshold at the 2026-07-31 observation; the change is claimed to lie within the previous 26 weeks, from 2026-01-30.</summary>
+  </entry>
+  <entry>
+    <title>Uruguay (UYU): new exchange rate regime likely, 2026-07-31</title>
+    <link href="./countries/URY/index.html"/>
+    <id>./alerts/URY/2026-07-31</id>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <summary>UYU: new regime likely (alert 2026-07-31). Rule: probability. Probability 0.679 that the UYU regime changed within the last 26 weeks; most probable start of the new regime 2026-05-29. Alert fired at the 2026-07-31 observation.</summary>
+  </entry>
+  <entry>
+    <title>Malaysia (MYR): variance rose — the band widened (alert 2026-06-26)</title>
+    <link href="./countries/MYS/index.html"/>
+    <id>./alerts/variance/MYS/2026-06-26</id>
+    <updated>2026-06-26T00:00:00Z</updated>
+    <summary>MYR: variance rose — the band widened (alert 2026-06-26). Rule: variance. The CUSUM statistic for a rise in the residual variance of the MYR crossed its threshold at the 2026-06-26 observation; the change is claimed to lie within the previous 26 weeks, from 2025-12-26.</summary>
+  </entry>
+  <entry>
+    <title>Mauritius (MUR): variance rose — the band widened (alert 2026-06-19)</title>
+    <link href="./countries/MUS/index.html"/>
+    <id>./alerts/variance/MUS/2026-06-19</id>
+    <updated>2026-06-19T00:00:00Z</updated>
+    <summary>MUR: variance rose — the band widened (alert 2026-06-19). Rule: variance. The CUSUM statistic for a rise in the residual variance of the MUR crossed its threshold at the 2026-06-19 observation; the change is claimed to lie within the previous 26 weeks, from 2025-12-19.</summary>
+  </entry>
+  <entry>
+    <title>Russia (RUB): variance rose — the band widened (alert 2026-06-12)</title>
+    <link href="./countries/RUS/index.html"/>
+    <id>./alerts/variance/RUS/2026-06-12</id>
+    <updated>2026-06-12T00:00:00Z</updated>
+    <summary>RUB: variance rose — the band widened (alert 2026-06-12). Rule: variance. The CUSUM statistic for a rise in the residual variance of the RUB crossed its threshold at the 2026-06-12 observation; the change is claimed to lie within the previous 26 weeks, from 2025-12-05.</summary>
+  </entry>
+  <entry>
+    <title>Mauritius (MUR): new exchange rate regime likely, 2026-05-29</title>
+    <link href="./countries/MUS/index.html"/>
+    <id>./alerts/MUS/2026-05-29</id>
+    <updated>2026-05-29T00:00:00Z</updated>
+    <summary>MUR: new regime likely (alert 2026-05-29). Rule: probability. Probability 0.571 that the MUR regime changed within the last 26 weeks; most probable start of the new regime 2026-05-22. Alert fired at the 2026-05-29 observation.</summary>
+  </entry>
+  <entry>
+    <title>Sri Lanka (LKR): new exchange rate regime likely, 2026-05-15</title>
+    <link href="./countries/LKA/index.html"/>
+    <id>./alerts/LKA/2026-05-15</id>
+    <updated>2026-05-15T00:00:00Z</updated>
+    <summary>LKR: new regime likely (alert 2026-05-15). Rule: probability. Probability 1.000 that the LKR regime changed within the last 26 weeks; most probable start of the new regime 2026-03-27. Alert fired at the 2026-05-15 observation.</summary>
+  </entry>
+  <entry>
+    <title>Philippines (PHP): new exchange rate regime likely, 2026-05-08</title>
+    <link href="./countries/PHL/index.html"/>
+    <id>./alerts/PHL/2026-05-08</id>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <summary>PHP: new regime likely (alert 2026-05-08). Rule: probability. Probability 0.952 that the PHP regime changed within the last 26 weeks; most probable start of the new regime 2026-02-27. Alert fired at the 2026-05-08 observation.</summary>
+  </entry>
+  <entry>
+    <title>Serbia (RSD): variance fell — the band narrowed (alert 2026-05-08)</title>
+    <link href="./countries/SRB/index.html"/>
+    <id>./alerts/variance/SRB/2026-05-08</id>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <summary>RSD: variance fell — the band narrowed (alert 2026-05-08). Rule: variance. The CUSUM statistic for a fall in the residual variance of the RSD crossed its threshold at the 2026-05-08 observation; the change is claimed to lie within the previous 26 weeks, from 2025-11-07.</summary>
+  </entry>
+  <entry>
+    <title>Hungary (HUF): variance rose — the band widened (alert 2026-04-10)</title>
+    <link href="./countries/HUN/index.html"/>
+    <id>./alerts/variance/HUN/2026-04-10</id>
+    <updated>2026-04-10T00:00:00Z</updated>
+    <summary>HUF: variance rose — the band widened (alert 2026-04-10). Rule: variance. The CUSUM statistic for a rise in the residual variance of the HUF crossed its threshold at the 2026-04-10 observation; the change is claimed to lie within the previous 26 weeks, from 2025-10-10.</summary>
+  </entry>
+  <entry>
+    <title>India (INR): variance rose — the band widened (alert 2026-04-03)</title>
+    <link href="./countries/IND/index.html"/>
+    <id>./alerts/variance/IND/2026-04-03</id>
+    <updated>2026-04-03T00:00:00Z</updated>
+    <summary>INR: variance rose — the band widened (alert 2026-04-03). Rule: variance. The CUSUM statistic for a rise in the residual variance of the INR crossed its threshold at the 2026-04-03 observation; the change is claimed to lie within the previous 26 weeks, from 2025-10-03.</summary>
+  </entry>
+  <entry>
+    <title>Algeria (DZD): variance rose — the band widened (alert 2026-03-27)</title>
+    <link href="./countries/DZA/index.html"/>
+    <id>./alerts/variance/DZA/2026-03-27</id>
+    <updated>2026-03-27T00:00:00Z</updated>
+    <summary>DZD: variance rose — the band widened (alert 2026-03-27). Rule: variance. The CUSUM statistic for a rise in the residual variance of the DZD crossed its threshold at the 2026-03-27 observation; the change is claimed to lie within the previous 26 weeks, from 2025-09-26.</summary>
+  </entry>
+  <entry>
+    <title>Uruguay (UYU): variance rose — the band widened (alert 2026-03-06)</title>
+    <link href="./countries/URY/index.html"/>
+    <id>./alerts/variance/URY/2026-03-06</id>
+    <updated>2026-03-06T00:00:00Z</updated>
+    <summary>UYU: variance rose — the band widened (alert 2026-03-06). Rule: variance. The CUSUM statistic for a rise in the residual variance of the UYU crossed its threshold at the 2026-03-06 observation; the change is claimed to lie within the previous 26 weeks, from 2025-09-05.</summary>
+  </entry>
+  <entry>
+    <title>India (INR): new exchange rate regime likely, 2026-02-06</title>
+    <link href="./countries/IND/index.html"/>
+    <id>./alerts/IND/2026-02-06</id>
+    <updated>2026-02-06T00:00:00Z</updated>
+    <summary>INR: new regime likely (alert 2026-02-06). Rule: probability. Probability 0.735 that the INR regime changed within the last 26 weeks; most probable start of the new regime 2025-12-05. Alert fired at the 2026-02-06 observation.</summary>
+  </entry>
+  <entry>
+    <title>Peru (PEN): variance fell — the band narrowed (alert 2026-01-30)</title>
+    <link href="./countries/PER/index.html"/>
+    <id>./alerts/variance/PER/2026-01-30</id>
+    <updated>2026-01-30T00:00:00Z</updated>
+    <summary>PEN: variance fell — the band narrowed (alert 2026-01-30). Rule: variance. The CUSUM statistic for a fall in the residual variance of the PEN crossed its threshold at the 2026-01-30 observation; the change is claimed to lie within the previous 26 weeks, from 2025-08-01.</summary>
+  </entry>
+  <entry>
+    <title>Sri Lanka (LKR): variance fell — the band narrowed (alert 2026-01-23)</title>
+    <link href="./countries/LKA/index.html"/>
+    <id>./alerts/variance/LKA/2026-01-23</id>
+    <updated>2026-01-23T00:00:00Z</updated>
+    <summary>LKR: variance fell — the band narrowed (alert 2026-01-23). Rule: variance. The CUSUM statistic for a fall in the residual variance of the LKR crossed its threshold at the 2026-01-23 observation; the change is claimed to lie within the previous 26 weeks, from 2025-07-25.</summary>
+  </entry>
+  <entry>
+    <title>North Macedonia (MKD): variance fell — the band narrowed (alert 2026-01-09)</title>
+    <link href="./countries/MKD/index.html"/>
+    <id>./alerts/variance/MKD/2026-01-09</id>
+    <updated>2026-01-09T00:00:00Z</updated>
+    <summary>MKD: variance fell — the band narrowed (alert 2026-01-09). Rule: variance. The CUSUM statistic for a fall in the residual variance of the MKD crossed its threshold at the 2026-01-09 observation; the change is claimed to lie within the previous 26 weeks, from 2025-07-11.</summary>
+  </entry>
+  <entry>
+    <title>Peru (PEN): new exchange rate regime likely, 2026-01-09</title>
+    <link href="./countries/PER/index.html"/>
+    <id>./alerts/PER/2026-01-09</id>
+    <updated>2026-01-09T00:00:00Z</updated>
+    <summary>PEN: new regime likely (alert 2026-01-09). Rule: probability. Probability 0.753 that the PEN regime changed within the last 26 weeks; most probable start of the new regime 2025-10-24. Alert fired at the 2026-01-09 observation.</summary>
+  </entry>
+  <entry>
+    <title>Turkey (TRY): variance fell — the band narrowed (alert 2026-01-09)</title>
+    <link href="./countries/TUR/index.html"/>
+    <id>./alerts/variance/TUR/2026-01-09</id>
+    <updated>2026-01-09T00:00:00Z</updated>
+    <summary>TRY: variance fell — the band narrowed (alert 2026-01-09). Rule: variance. The CUSUM statistic for a fall in the residual variance of the TRY crossed its threshold at the 2026-01-09 observation; the change is claimed to lie within the previous 26 weeks, from 2025-07-11.</summary>
+  </entry>
+  <entry>
+    <title>Ukraine (UAH): new exchange rate regime likely, 2026-01-09</title>
+    <link href="./countries/UKR/index.html"/>
+    <id>./alerts/UKR/2026-01-09</id>
+    <updated>2026-01-09T00:00:00Z</updated>
+    <summary>UAH: new regime likely (alert 2026-01-09). Rule: probability. Probability 0.940 that the UAH regime changed within the last 26 weeks; most probable start of the new regime 2026-01-09. Alert fired at the 2026-01-09 observation.</summary>
+  </entry>
+  <entry>
+    <title>Bosnia &amp; Herzegovina (BAM): variance fell — the band narrowed (alert 2026-01-02)</title>
+    <link href="./countries/BIH/index.html"/>
+    <id>./alerts/variance/BIH/2026-01-02</id>
+    <updated>2026-01-02T00:00:00Z</updated>
+    <summary>BAM: variance fell — the band narrowed (alert 2026-01-02). Rule: variance. The CUSUM statistic for a fall in the residual variance of the BAM crossed its threshold at the 2026-01-02 observation; the change is claimed to lie within the previous 26 weeks, from 2025-07-04.</summary>
+  </entry>
+  <entry>
+    <title>Argentina (ARS): variance rose — the band widened (alert 2025-12-26)</title>
+    <link href="./countries/ARG/index.html"/>
+    <id>./alerts/variance/ARG/2025-12-26</id>
+    <updated>2025-12-26T00:00:00Z</updated>
+    <summary>ARS: variance rose — the band widened (alert 2025-12-26). Rule: variance. The CUSUM statistic for a rise in the residual variance of the ARS crossed its threshold at the 2025-12-26 observation; the change is claimed to lie within the previous 26 weeks, from 2025-06-27.</summary>
+  </entry>
+  <entry>
+    <title>Indonesia (IDR): new exchange rate regime likely, 2025-12-12</title>
+    <link href="./countries/IDN/index.html"/>
+    <id>./alerts/IDN/2025-12-12</id>
+    <updated>2025-12-12T00:00:00Z</updated>
+    <summary>IDR: new regime likely (alert 2025-12-12). Rule: probability. Probability 0.513 that the IDR regime changed within the last 26 weeks; most probable start of the new regime 2025-10-10. Alert fired at the 2025-12-12 observation.</summary>
+  </entry>
+  <entry>
+    <title>Brazil (BRL): new exchange rate regime likely, 2025-11-28</title>
+    <link href="./countries/BRA/index.html"/>
+    <id>./alerts/BRA/2025-11-28</id>
+    <updated>2025-11-28T00:00:00Z</updated>
+    <summary>BRL: new regime likely (alert 2025-11-28). Rule: probability. Probability 0.745 that the BRL regime changed within the last 26 weeks; most probable start of the new regime 2025-08-15. Alert fired at the 2025-11-28 observation.</summary>
+  </entry>
+  <entry>
+    <title>Poland (PLN): variance fell — the band narrowed (alert 2025-11-28)</title>
+    <link href="./countries/POL/index.html"/>
+    <id>./alerts/variance/POL/2025-11-28</id>
+    <updated>2025-11-28T00:00:00Z</updated>
+    <summary>PLN: variance fell — the band narrowed (alert 2025-11-28). Rule: variance. The CUSUM statistic for a fall in the residual variance of the PLN crossed its threshold at the 2025-11-28 observation; the change is claimed to lie within the previous 26 weeks, from 2025-05-30.</summary>
+  </entry>
+  <entry>
+    <title>Romania (RON): variance rose — the band widened (alert 2025-11-21)</title>
+    <link href="./countries/ROU/index.html"/>
+    <id>./alerts/variance/ROU/2025-11-21</id>
+    <updated>2025-11-21T00:00:00Z</updated>
+    <summary>RON: variance rose — the band widened (alert 2025-11-21). Rule: variance. The CUSUM statistic for a rise in the residual variance of the RON crossed its threshold at the 2025-11-21 observation; the change is claimed to lie within the previous 26 weeks, from 2025-05-23.</summary>
+  </entry>
+  <entry>
+    <title>Uruguay (UYU): new exchange rate regime likely, 2025-11-07</title>
+    <link href="./countries/URY/index.html"/>
+    <id>./alerts/URY/2025-11-07</id>
+    <updated>2025-11-07T00:00:00Z</updated>
+    <summary>UYU: new regime likely (alert 2025-11-07). Rule: probability. Probability 0.692 that the UYU regime changed within the last 26 weeks; most probable start of the new regime 2022-03-25. Alert fired at the 2025-11-07 observation.</summary>
+  </entry>
+  <entry>
+    <title>South Africa (ZAR): new exchange rate regime likely, 2025-10-31</title>
+    <link href="./countries/ZAF/index.html"/>
+    <id>./alerts/ZAF/2025-10-31</id>
+    <updated>2025-10-31T00:00:00Z</updated>
+    <summary>ZAR: new regime likely (alert 2025-10-31). Rule: probability. Probability 0.722 that the ZAR regime changed within the last 26 weeks; most probable start of the new regime 2025-08-15. Alert fired at the 2025-10-31 observation.</summary>
+  </entry>
+  <entry>
+    <title>Colombia (COP): new exchange rate regime likely, 2025-10-17</title>
+    <link href="./countries/COL/index.html"/>
+    <id>./alerts/COL/2025-10-17</id>
+    <updated>2025-10-17T00:00:00Z</updated>
+    <summary>COP: new regime likely (alert 2025-10-17). Rule: probability. Probability 0.826 that the COP regime changed within the last 26 weeks; most probable start of the new regime 2025-09-19. Alert fired at the 2025-10-17 observation.</summary>
+  </entry>
+  <entry>
+    <title>Mexico (MXN): new exchange rate regime likely, 2025-09-26</title>
+    <link href="./countries/MEX/index.html"/>
+    <id>./alerts/MEX/2025-09-26</id>
+    <updated>2025-09-26T00:00:00Z</updated>
+    <summary>MXN: new regime likely (alert 2025-09-26). Rule: probability. Probability 0.708 that the MXN regime changed within the last 26 weeks; most probable start of the new regime 2025-05-16. Alert fired at the 2025-09-26 observation.</summary>
+  </entry>
+  <entry>
+    <title>Mexico (MXN): variance fell — the band narrowed (alert 2025-09-26)</title>
+    <link href="./countries/MEX/index.html"/>
+    <id>./alerts/variance/MEX/2025-09-26</id>
+    <updated>2025-09-26T00:00:00Z</updated>
+    <summary>MXN: variance fell — the band narrowed (alert 2025-09-26). Rule: variance. The CUSUM statistic for a fall in the residual variance of the MXN crossed its threshold at the 2025-09-26 observation; the change is claimed to lie within the previous 26 weeks, from 2025-03-28.</summary>
+  </entry>
+  <entry>
+    <title>Saudi Arabia (SAR): variance fell — the band narrowed (alert 2025-09-26)</title>
+    <link href="./countries/SAU/index.html"/>
+    <id>./alerts/variance/SAU/2025-09-26</id>
+    <updated>2025-09-26T00:00:00Z</updated>
+    <summary>SAR: variance fell — the band narrowed (alert 2025-09-26). Rule: variance. The CUSUM statistic for a fall in the residual variance of the SAR crossed its threshold at the 2025-09-26 observation; the change is claimed to lie within the previous 26 weeks, from 2025-03-28.</summary>
+  </entry>
+  <entry>
+    <title>India (INR): variance rose — the band widened (alert 2025-08-15)</title>
+    <link href="./countries/IND/index.html"/>
+    <id>./alerts/variance/IND/2025-08-15</id>
+    <updated>2025-08-15T00:00:00Z</updated>
+    <summary>INR: variance rose — the band widened (alert 2025-08-15). Rule: variance. The CUSUM statistic for a rise in the residual variance of the INR crossed its threshold at the 2025-08-15 observation; the change is claimed to lie within the previous 26 weeks, from 2025-02-14.</summary>
+  </entry>
+  <entry>
+    <title>Russia (RUB): new exchange rate regime likely, 2025-06-27</title>
+    <link href="./countries/RUS/index.html"/>
+    <id>./alerts/RUS/2025-06-27</id>
+    <updated>2025-06-27T00:00:00Z</updated>
+    <summary>RUB: new regime likely (alert 2025-06-27). Rule: probability. Probability 0.713 that the RUB regime changed within the last 26 weeks; most probable start of the new regime 2022-02-25. Alert fired at the 2025-06-27 observation.</summary>
+  </entry>
+  <entry>
+    <title>Argentina (ARS): variance rose — the band widened (alert 2025-06-20)</title>
+    <link href="./countries/ARG/index.html"/>
+    <id>./alerts/variance/ARG/2025-06-20</id>
+    <updated>2025-06-20T00:00:00Z</updated>
+    <summary>ARS: variance rose — the band widened (alert 2025-06-20). Rule: variance. The CUSUM statistic for a rise in the residual variance of the ARS crossed its threshold at the 2025-06-20 observation; the change is claimed to lie within the previous 26 weeks, from 2024-12-20.</summary>
+  </entry>
+  <entry>
+    <title>Algeria (DZD): new exchange rate regime likely, 2025-06-13</title>
+    <link href="./countries/DZA/index.html"/>
+    <id>./alerts/DZA/2025-06-13</id>
+    <updated>2025-06-13T00:00:00Z</updated>
+    <summary>DZD: new regime likely (alert 2025-06-13). Rule: probability. Probability 0.882 that the DZD regime changed within the last 26 weeks; most probable start of the new regime 2025-06-13. Alert fired at the 2025-06-13 observation.</summary>
+  </entry>
+  <entry>
+    <title>Sri Lanka (LKR): variance fell — the band narrowed (alert 2025-05-30)</title>
+    <link href="./countries/LKA/index.html"/>
+    <id>./alerts/variance/LKA/2025-05-30</id>
+    <updated>2025-05-30T00:00:00Z</updated>
+    <summary>LKR: variance fell — the band narrowed (alert 2025-05-30). Rule: variance. The CUSUM statistic for a fall in the residual variance of the LKR crossed its threshold at the 2025-05-30 observation; the change is claimed to lie within the previous 26 weeks, from 2024-11-29.</summary>
+  </entry>
+  <entry>
+    <title>Romania (RON): variance rose — the band widened (alert 2025-05-16)</title>
+    <link href="./countries/ROU/index.html"/>
+    <id>./alerts/variance/ROU/2025-05-16</id>
+    <updated>2025-05-16T00:00:00Z</updated>
+    <summary>RON: variance rose — the band widened (alert 2025-05-16). Rule: variance. The CUSUM statistic for a rise in the residual variance of the RON crossed its threshold at the 2025-05-16 observation; the change is claimed to lie within the previous 26 weeks, from 2024-11-15.</summary>
+  </entry>
+  <entry>
+    <title>Brunei (BND): new exchange rate regime likely, 2025-05-09</title>
+    <link href="./countries/BRN/index.html"/>
+    <id>./alerts/BRN/2025-05-09</id>
+    <updated>2025-05-09T00:00:00Z</updated>
+    <summary>BND: new regime likely (alert 2025-05-09). Rule: probability. Probability 0.685 that the BND regime changed within the last 26 weeks; most probable start of the new regime 2025-04-11. Alert fired at the 2025-05-09 observation.</summary>
+  </entry>
+  <entry>
+    <title>Chile (CLP): variance rose — the band widened (alert 2025-05-09)</title>
+    <link href="./countries/CHL/index.html"/>
+    <id>./alerts/variance/CHL/2025-05-09</id>
+    <updated>2025-05-09T00:00:00Z</updated>
+    <summary>CLP: variance rose — the band widened (alert 2025-05-09). Rule: variance. The CUSUM statistic for a rise in the residual variance of the CLP crossed its threshold at the 2025-05-09 observation; the change is claimed to lie within the previous 26 weeks, from 2024-11-08.</summary>
+  </entry>
+  <entry>
+    <title>Romania (RON): new exchange rate regime likely, 2025-05-09</title>
+    <link href="./countries/ROU/index.html"/>
+    <id>./alerts/ROU/2025-05-09</id>
+    <updated>2025-05-09T00:00:00Z</updated>
+    <summary>RON: new regime likely (alert 2025-05-09). Rule: probability. Probability 1.000 that the RON regime changed within the last 26 weeks; most probable start of the new regime 2025-05-09. Alert fired at the 2025-05-09 observation.</summary>
+  </entry>
+  <entry>
+    <title>Indonesia (IDR): new exchange rate regime likely, 2025-05-02</title>
+    <link href="./countries/IDN/index.html"/>
+    <id>./alerts/IDN/2025-05-02</id>
+    <updated>2025-05-02T00:00:00Z</updated>
+    <summary>IDR: new regime likely (alert 2025-05-02). Rule: probability. Probability 0.688 that the IDR regime changed within the last 26 weeks; most probable start of the new regime 2025-04-04. Alert fired at the 2025-05-02 observation.</summary>
+  </entry>
+  <entry>
+    <title>North Macedonia (MKD): new exchange rate regime likely, 2025-04-25</title>
+    <link href="./countries/MKD/index.html"/>
+    <id>./alerts/MKD/2025-04-25</id>
+    <updated>2025-04-25T00:00:00Z</updated>
+    <summary>MKD: new regime likely (alert 2025-04-25). Rule: probability. Probability 0.563 that the MKD regime changed within the last 26 weeks; most probable start of the new regime 2025-04-11. Alert fired at the 2025-04-25 observation.</summary>
+  </entry>
+  <entry>
+    <title>Argentina (ARS): new exchange rate regime likely, 2025-04-18</title>
+    <link href="./countries/ARG/index.html"/>
+    <id>./alerts/ARG/2025-04-18</id>
+    <updated>2025-04-18T00:00:00Z</updated>
+    <summary>ARS: new regime likely (alert 2025-04-18). Rule: probability. Probability 1.000 that the ARS regime changed within the last 26 weeks; most probable start of the new regime 2025-04-18. Alert fired at the 2025-04-18 observation.</summary>
+  </entry>
+  <entry>
+    <title>Bosnia &amp; Herzegovina (BAM): variance rose — the band widened (alert 2025-04-18)</title>
+    <link href="./countries/BIH/index.html"/>
+    <id>./alerts/variance/BIH/2025-04-18</id>
+    <updated>2025-04-18T00:00:00Z</updated>
+    <summary>BAM: variance rose — the band widened (alert 2025-04-18). Rule: variance. The CUSUM statistic for a rise in the residual variance of the BAM crossed its threshold at the 2025-04-18 observation; the change is claimed to lie within the previous 26 weeks, from 2024-10-18.</summary>
+  </entry>
+  <entry>
+    <title>Algeria (DZD): variance rose — the band widened (alert 2025-04-18)</title>
+    <link href="./countries/DZA/index.html"/>
+    <id>./alerts/variance/DZA/2025-04-18</id>
+    <updated>2025-04-18T00:00:00Z</updated>
+    <summary>DZD: variance rose — the band widened (alert 2025-04-18). Rule: variance. The CUSUM statistic for a rise in the residual variance of the DZD crossed its threshold at the 2025-04-18 observation; the change is claimed to lie within the previous 26 weeks, from 2024-10-18.</summary>
+  </entry>
+  <entry>
+    <title>Algeria (DZD): variance rose — the band widened (alert 2025-04-11)</title>
+    <link href="./countries/DZA/index.html"/>
+    <id>./alerts/variance/DZA/2025-04-11</id>
+    <updated>2025-04-11T00:00:00Z</updated>
+    <summary>DZD: variance rose — the band widened (alert 2025-04-11). Rule: variance. The CUSUM statistic for a rise in the residual variance of the DZD crossed its threshold at the 2025-04-11 observation; the change is claimed to lie within the previous 26 weeks, from 2024-10-11.</summary>
+  </entry>
+  <entry>
+    <title>Kuwait (KWD): variance rose — the band widened (alert 2025-04-11)</title>
+    <link href="./countries/KWT/index.html"/>
+    <id>./alerts/variance/KWT/2025-04-11</id>
+    <updated>2025-04-11T00:00:00Z</updated>
+    <summary>KWD: variance rose — the band widened (alert 2025-04-11). Rule: variance. The CUSUM statistic for a rise in the residual variance of the KWD crossed its threshold at the 2025-04-11 observation; the change is claimed to lie within the previous 26 weeks, from 2024-10-04.</summary>
+  </entry>
+  <entry>
+    <title>North Macedonia (MKD): variance rose — the band widened (alert 2025-04-11)</title>
+    <link href="./countries/MKD/index.html"/>
+    <id>./alerts/variance/MKD/2025-04-11</id>
+    <updated>2025-04-11T00:00:00Z</updated>
+    <summary>MKD: variance rose — the band widened (alert 2025-04-11). Rule: variance. The CUSUM statistic for a rise in the residual variance of the MKD crossed its threshold at the 2025-04-11 observation; the change is claimed to lie within the previous 26 weeks, from 2024-10-11.</summary>
+  </entry>
+  <entry>
+    <title>Malaysia (MYR): new exchange rate regime likely, 2025-04-11</title>
+    <link href="./countries/MYS/index.html"/>
+    <id>./alerts/MYS/2025-04-11</id>
+    <updated>2025-04-11T00:00:00Z</updated>
+    <summary>MYR: new regime likely (alert 2025-04-11). Rule: probability. Probability 0.785 that the MYR regime changed within the last 26 weeks; most probable start of the new regime 2025-02-07. Alert fired at the 2025-04-11 observation.</summary>
+  </entry>
+  <entry>
+    <title>Albania (ALL): variance rose — the band widened (alert 2025-03-14)</title>
+    <link href="./countries/ALB/index.html"/>
+    <id>./alerts/variance/ALB/2025-03-14</id>
+    <updated>2025-03-14T00:00:00Z</updated>
+    <summary>ALL: variance rose — the band widened (alert 2025-03-14). Rule: variance. The CUSUM statistic for a rise in the residual variance of the ALL crossed its threshold at the 2025-03-14 observation; the change is claimed to lie within the previous 26 weeks, from 2024-09-13.</summary>
+  </entry>
+  <entry>
+    <title>South Africa (ZAR): new exchange rate regime likely, 2025-03-14</title>
+    <link href="./countries/ZAF/index.html"/>
+    <id>./alerts/ZAF/2025-03-14</id>
+    <updated>2025-03-14T00:00:00Z</updated>
+    <summary>ZAR: new regime likely (alert 2025-03-14). Rule: probability. Probability 0.789 that the ZAR regime changed within the last 26 weeks; most probable start of the new regime 2025-02-14. Alert fired at the 2025-03-14 observation.</summary>
+  </entry>
+  <entry>
+    <title>Bulgaria (BGN): variance rose — the band widened (alert 2025-03-07)</title>
+    <link href="./countries/BGR/index.html"/>
+    <id>./alerts/variance/BGR/2025-03-07</id>
+    <updated>2025-03-07T00:00:00Z</updated>
+    <summary>BGN: variance rose — the band widened (alert 2025-03-07). Rule: variance. The CUSUM statistic for a rise in the residual variance of the BGN crossed its threshold at the 2025-03-07 observation; the change is claimed to lie within the previous 26 weeks, from 2024-09-06.</summary>
+  </entry>
+  <entry>
+    <title>Trinidad &amp; Tobago (TTD): new exchange rate regime likely, 2025-02-28</title>
+    <link href="./countries/TTO/index.html"/>
+    <id>./alerts/TTO/2025-02-28</id>
+    <updated>2025-02-28T00:00:00Z</updated>
+    <summary>TTD: new regime likely (alert 2025-02-28). Rule: probability. Probability 0.847 that the TTD regime changed within the last 26 weeks; most probable start of the new regime 2025-02-21. Alert fired at the 2025-02-28 observation.</summary>
+  </entry>
+  <entry>
+    <title>Malaysia (MYR): variance rose — the band widened (alert 2025-02-14)</title>
+    <link href="./countries/MYS/index.html"/>
+    <id>./alerts/variance/MYS/2025-02-14</id>
+    <updated>2025-02-14T00:00:00Z</updated>
+    <summary>MYR: variance rose — the band widened (alert 2025-02-14). Rule: variance. The CUSUM statistic for a rise in the residual variance of the MYR crossed its threshold at the 2025-02-14 observation; the change is claimed to lie within the previous 26 weeks, from 2024-08-16.</summary>
+  </entry>
+  <entry>
+    <title>India (INR): new exchange rate regime likely, 2025-02-07</title>
+    <link href="./countries/IND/index.html"/>
+    <id>./alerts/IND/2025-02-07</id>
+    <updated>2025-02-07T00:00:00Z</updated>
+    <summary>INR: new regime likely (alert 2025-02-07). Rule: probability. Probability 0.997 that the INR regime changed within the last 26 weeks; most probable start of the new regime 2024-12-27. Alert fired at the 2025-02-07 observation.</summary>
+  </entry>
+  <entry>
+    <title>India (INR): variance rose — the band widened (alert 2025-02-07)</title>
+    <link href="./countries/IND/index.html"/>
+    <id>./alerts/variance/IND/2025-02-07</id>
+    <updated>2025-02-07T00:00:00Z</updated>
+    <summary>INR: variance rose — the band widened (alert 2025-02-07). Rule: variance. The CUSUM statistic for a rise in the residual variance of the INR crossed its threshold at the 2025-02-07 observation; the change is claimed to lie within the previous 26 weeks, from 2024-08-09.</summary>
+  </entry>
+  <entry>
+    <title>Mauritius (MUR): variance rose — the band widened (alert 2025-01-10)</title>
+    <link href="./countries/MUS/index.html"/>
+    <id>./alerts/variance/MUS/2025-01-10</id>
+    <updated>2025-01-10T00:00:00Z</updated>
+    <summary>MUR: variance rose — the band widened (alert 2025-01-10). Rule: variance. The CUSUM statistic for a rise in the residual variance of the MUR crossed its threshold at the 2025-01-10 observation; the change is claimed to lie within the previous 26 weeks, from 2024-07-12.</summary>
+  </entry>
+  <entry>
+    <title>Russia (RUB): variance rose — the band widened (alert 2024-12-27)</title>
+    <link href="./countries/RUS/index.html"/>
+    <id>./alerts/variance/RUS/2024-12-27</id>
+    <updated>2024-12-27T00:00:00Z</updated>
+    <summary>RUB: variance rose — the band widened (alert 2024-12-27). Rule: variance. The CUSUM statistic for a rise in the residual variance of the RUB crossed its threshold at the 2024-12-27 observation; the change is claimed to lie within the previous 26 weeks, from 2024-06-28.</summary>
+  </entry>
+  <entry>
+    <title>Argentina (ARS): variance fell — the band narrowed (alert 2024-12-13)</title>
+    <link href="./countries/ARG/index.html"/>
+    <id>./alerts/variance/ARG/2024-12-13</id>
+    <updated>2024-12-13T00:00:00Z</updated>
+    <summary>ARS: variance fell — the band narrowed (alert 2024-12-13). Rule: variance. The CUSUM statistic for a fall in the residual variance of the ARS crossed its threshold at the 2024-12-13 observation; the change is claimed to lie within the previous 26 weeks, from 2024-06-14.</summary>
+  </entry>
+  <entry>
+    <title>Turkey (TRY): variance fell — the band narrowed (alert 2024-12-13)</title>
+    <link href="./countries/TUR/index.html"/>
+    <id>./alerts/variance/TUR/2024-12-13</id>
+    <updated>2024-12-13T00:00:00Z</updated>
+    <summary>TRY: variance fell — the band narrowed (alert 2024-12-13). Rule: variance. The CUSUM statistic for a fall in the residual variance of the TRY crossed its threshold at the 2024-12-13 observation; the change is claimed to lie within the previous 26 weeks, from 2024-06-14.</summary>
+  </entry>
+  <entry>
+    <title>Peru (PEN): variance fell — the band narrowed (alert 2024-11-08)</title>
+    <link href="./countries/PER/index.html"/>
+    <id>./alerts/variance/PER/2024-11-08</id>
+    <updated>2024-11-08T00:00:00Z</updated>
+    <summary>PEN: variance fell — the band narrowed (alert 2024-11-08). Rule: variance. The CUSUM statistic for a fall in the residual variance of the PEN crossed its threshold at the 2024-11-08 observation; the change is claimed to lie within the previous 26 weeks, from 2024-05-10.</summary>
+  </entry>
+  <entry>
+    <title>Peru (PEN): new exchange rate regime likely, 2024-10-25</title>
+    <link href="./countries/PER/index.html"/>
+    <id>./alerts/PER/2024-10-25</id>
+    <updated>2024-10-25T00:00:00Z</updated>
+    <summary>PEN: new regime likely (alert 2024-10-25). Rule: probability. Probability 0.643 that the PEN regime changed within the last 26 weeks; most probable start of the new regime 2021-04-09. Alert fired at the 2024-10-25 observation.</summary>
+  </entry>
+  <entry>
+    <title>Turkey (TRY): new exchange rate regime likely, 2024-10-25</title>
+    <link href="./countries/TUR/index.html"/>
+    <id>./alerts/TUR/2024-10-25</id>
+    <updated>2024-10-25T00:00:00Z</updated>
+    <summary>TRY: new regime likely (alert 2024-10-25). Rule: probability. Probability 0.528 that the TRY regime changed within the last 26 weeks; most probable start of the new regime 2023-05-19. Alert fired at the 2024-10-25 observation.</summary>
+  </entry>
+  <entry>
+    <title>Sri Lanka (LKR): new exchange rate regime likely, 2024-10-04</title>
+    <link href="./countries/LKA/index.html"/>
+    <id>./alerts/LKA/2024-10-04</id>
+    <updated>2024-10-04T00:00:00Z</updated>
+    <summary>LKR: new regime likely (alert 2024-10-04). Rule: probability. Probability 0.503 that the LKR regime changed within the last 26 weeks; most probable start of the new regime 2024-09-20. Alert fired at the 2024-10-04 observation.</summary>
+  </entry>
+  <entry>
+    <title>Albania (ALL): variance fell — the band narrowed (alert 2024-09-06)</title>
+    <link href="./countries/ALB/index.html"/>
+    <id>./alerts/variance/ALB/2024-09-06</id>
+    <updated>2024-09-06T00:00:00Z</updated>
+    <summary>ALL: variance fell — the band narrowed (alert 2024-09-06). Rule: variance. The CUSUM statistic for a fall in the residual variance of the ALL crossed its threshold at the 2024-09-06 observation; the change is claimed to lie within the previous 26 weeks, from 2024-03-08.</summary>
+  </entry>
+  <entry>
+    <title>Algeria (DZD): new exchange rate regime likely, 2024-09-06</title>
+    <link href="./countries/DZA/index.html"/>
+    <id>./alerts/DZA/2024-09-06</id>
+    <updated>2024-09-06T00:00:00Z</updated>
+    <summary>DZD: new regime likely (alert 2024-09-06). Rule: probability. Probability 0.940 that the DZD regime changed within the last 26 weeks; most probable start of the new regime 2024-09-06. Alert fired at the 2024-09-06 observation.</summary>
+  </entry>
+  <entry>
+    <title>Indonesia (IDR): variance rose — the band widened (alert 2024-08-16)</title>
+    <link href="./countries/IDN/index.html"/>
+    <id>./alerts/variance/IDN/2024-08-16</id>
+    <updated>2024-08-16T00:00:00Z</updated>
+    <summary>IDR: variance rose — the band widened (alert 2024-08-16). Rule: variance. The CUSUM statistic for a rise in the residual variance of the IDR crossed its threshold at the 2024-08-16 observation; the change is claimed to lie within the previous 26 weeks, from 2024-02-16.</summary>
+  </entry>
+  <entry>
+    <title>Malaysia (MYR): variance rose — the band widened (alert 2024-08-09)</title>
+    <link href="./countries/MYS/index.html"/>
+    <id>./alerts/variance/MYS/2024-08-09</id>
+    <updated>2024-08-09T00:00:00Z</updated>
+    <summary>MYR: variance rose — the band widened (alert 2024-08-09). Rule: variance. The CUSUM statistic for a rise in the residual variance of the MYR crossed its threshold at the 2024-08-09 observation; the change is claimed to lie within the previous 26 weeks, from 2024-02-09.</summary>
+  </entry>
+  <entry>
+    <title>Malaysia (MYR): new exchange rate regime likely, 2024-08-02</title>
+    <link href="./countries/MYS/index.html"/>
+    <id>./alerts/MYS/2024-08-02</id>
+    <updated>2024-08-02T00:00:00Z</updated>
+    <summary>MYR: new regime likely (alert 2024-08-02). Rule: probability. Probability 0.955 that the MYR regime changed within the last 26 weeks; most probable start of the new regime 2024-08-02. Alert fired at the 2024-08-02 observation.</summary>
+  </entry>
+  <entry>
+    <title>China (CNY): new exchange rate regime likely, 2024-06-07</title>
+    <link href="./countries/CHN/index.html"/>
+    <id>./alerts/CHN/2024-06-07</id>
+    <updated>2024-06-07T00:00:00Z</updated>
+    <summary>CNY: new regime likely (alert 2024-06-07). Rule: probability. Probability 0.505 that the CNY regime changed within the last 26 weeks; most probable start of the new regime 2024-01-12. Alert fired at the 2024-06-07 observation.</summary>
+  </entry>
+  <entry>
+    <title>China (CNY): variance fell — the band narrowed (alert 2024-05-31)</title>
+    <link href="./countries/CHN/index.html"/>
+    <id>./alerts/variance/CHN/2024-05-31</id>
+    <updated>2024-05-31T00:00:00Z</updated>
+    <summary>CNY: variance fell — the band narrowed (alert 2024-05-31). Rule: variance. The CUSUM statistic for a fall in the residual variance of the CNY crossed its threshold at the 2024-05-31 observation; the change is claimed to lie within the previous 26 weeks, from 2023-12-01.</summary>
+  </entry>
+  <entry>
+    <title>Argentina (ARS): variance fell — the band narrowed (alert 2024-05-17)</title>
+    <link href="./countries/ARG/index.html"/>
+    <id>./alerts/variance/ARG/2024-05-17</id>
+    <updated>2024-05-17T00:00:00Z</updated>
+    <summary>ARS: variance fell — the band narrowed (alert 2024-05-17). Rule: variance. The CUSUM statistic for a fall in the residual variance of the ARS crossed its threshold at the 2024-05-17 observation; the change is claimed to lie within the previous 26 weeks, from 2023-11-17.</summary>
+  </entry>
+  <entry>
+    <title>Ukraine (UAH): variance rose — the band widened (alert 2024-05-10)</title>
+    <link href="./countries/UKR/index.html"/>
+    <id>./alerts/variance/UKR/2024-05-10</id>
+    <updated>2024-05-10T00:00:00Z</updated>
+    <summary>UAH: variance rose — the band widened (alert 2024-05-10). Rule: variance. The CUSUM statistic for a rise in the residual variance of the UAH crossed its threshold at the 2024-05-10 observation; the change is claimed to lie within the previous 26 weeks, from 2023-11-10.</summary>
+  </entry>
+  <entry>
+    <title>Russia (RUB): variance fell — the band narrowed (alert 2024-05-03)</title>
+    <link href="./countries/RUS/index.html"/>
+    <id>./alerts/variance/RUS/2024-05-03</id>
+    <updated>2024-05-03T00:00:00Z</updated>
+    <summary>RUB: variance fell — the band narrowed (alert 2024-05-03). Rule: variance. The CUSUM statistic for a fall in the residual variance of the RUB crossed its threshold at the 2024-05-03 observation; the change is claimed to lie within the previous 26 weeks, from 2023-10-27.</summary>
+  </entry>
+  <entry>
+    <title>Brunei (BND): variance fell — the band narrowed (alert 2024-03-29)</title>
+    <link href="./countries/BRN/index.html"/>
+    <id>./alerts/variance/BRN/2024-03-29</id>
+    <updated>2024-03-29T00:00:00Z</updated>
+    <summary>BND: variance fell — the band narrowed (alert 2024-03-29). Rule: variance. The CUSUM statistic for a fall in the residual variance of the BND crossed its threshold at the 2024-03-29 observation; the change is claimed to lie within the previous 26 weeks, from 2023-09-22.</summary>
+  </entry>
+  <entry>
+    <title>Russia (RUB): new exchange rate regime likely, 2024-03-29</title>
+    <link href="./countries/RUS/index.html"/>
+    <id>./alerts/RUS/2024-03-29</id>
+    <updated>2024-03-29T00:00:00Z</updated>
+    <summary>RUB: new regime likely (alert 2024-03-29). Rule: probability. Probability 0.897 that the RUB regime changed within the last 26 weeks; most probable start of the new regime 2024-03-08. Alert fired at the 2024-03-29 observation.</summary>
+  </entry>
+  <entry>
+    <title>Mexico (MXN): variance fell — the band narrowed (alert 2024-03-08)</title>
+    <link href="./countries/MEX/index.html"/>
+    <id>./alerts/variance/MEX/2024-03-08</id>
+    <updated>2024-03-08T00:00:00Z</updated>
+    <summary>MXN: variance fell — the band narrowed (alert 2024-03-08). Rule: variance. The CUSUM statistic for a fall in the residual variance of the MXN crossed its threshold at the 2024-03-08 observation; the change is claimed to lie within the previous 26 weeks, from 2023-09-08.</summary>
+  </entry>
+  <entry>
+    <title>Colombia (COP): variance fell — the band narrowed (alert 2024-03-01)</title>
+    <link href="./countries/COL/index.html"/>
+    <id>./alerts/variance/COL/2024-03-01</id>
+    <updated>2024-03-01T00:00:00Z</updated>
+    <summary>COP: variance fell — the band narrowed (alert 2024-03-01). Rule: variance. The CUSUM statistic for a fall in the residual variance of the COP crossed its threshold at the 2024-03-01 observation; the change is claimed to lie within the previous 26 weeks, from 2023-09-01.</summary>
+  </entry>
+  <entry>
+    <title>Uruguay (UYU): variance fell — the band narrowed (alert 2024-02-23)</title>
+    <link href="./countries/URY/index.html"/>
+    <id>./alerts/variance/URY/2024-02-23</id>
+    <updated>2024-02-23T00:00:00Z</updated>
+    <summary>UYU: variance fell — the band narrowed (alert 2024-02-23). Rule: variance. The CUSUM statistic for a fall in the residual variance of the UYU crossed its threshold at the 2024-02-23 observation; the change is claimed to lie within the previous 26 weeks, from 2023-08-25.</summary>
+  </entry>
+  <entry>
+    <title>Brazil (BRL): new exchange rate regime likely, 2024-02-16</title>
+    <link href="./countries/BRA/index.html"/>
+    <id>./alerts/BRA/2024-02-16</id>
+    <updated>2024-02-16T00:00:00Z</updated>
+    <summary>BRL: new regime likely (alert 2024-02-16). Rule: probability. Probability 0.873 that the BRL regime changed within the last 26 weeks; most probable start of the new regime 2023-11-03. Alert fired at the 2024-02-16 observation.</summary>
+  </entry>
+  <entry>
+    <title>Brazil (BRL): variance fell — the band narrowed (alert 2024-02-09)</title>
+    <link href="./countries/BRA/index.html"/>
+    <id>./alerts/variance/BRA/2024-02-09</id>
+    <updated>2024-02-09T00:00:00Z</updated>
+    <summary>BRL: variance fell — the band narrowed (alert 2024-02-09). Rule: variance. The CUSUM statistic for a fall in the residual variance of the BRL crossed its threshold at the 2024-02-09 observation; the change is claimed to lie within the previous 26 weeks, from 2023-08-11.</summary>
+  </entry>
+  <entry>
+    <title>Uruguay (UYU): new exchange rate regime likely, 2024-02-09</title>
+    <link href="./countries/URY/index.html"/>
+    <id>./alerts/URY/2024-02-09</id>
+    <updated>2024-02-09T00:00:00Z</updated>
+    <summary>UYU: new regime likely (alert 2024-02-09). Rule: probability. Probability 0.644 that the UYU regime changed within the last 26 weeks; most probable start of the new regime 2022-03-25. Alert fired at the 2024-02-09 observation.</summary>
+  </entry>
+  <entry>
+    <title>India (INR): variance fell — the band narrowed (alert 2024-01-26)</title>
+    <link href="./countries/IND/index.html"/>
+    <id>./alerts/variance/IND/2024-01-26</id>
+    <updated>2024-01-26T00:00:00Z</updated>
+    <summary>INR: variance fell — the band narrowed (alert 2024-01-26). Rule: variance. The CUSUM statistic for a fall in the residual variance of the INR crossed its threshold at the 2024-01-26 observation; the change is claimed to lie within the previous 26 weeks, from 2023-07-28.</summary>
+  </entry>
+  <entry>
+    <title>Romania (RON): variance fell — the band narrowed (alert 2024-01-05)</title>
+    <link href="./countries/ROU/index.html"/>
+    <id>./alerts/variance/ROU/2024-01-05</id>
+    <updated>2024-01-05T00:00:00Z</updated>
+    <summary>RON: variance fell — the band narrowed (alert 2024-01-05). Rule: variance. The CUSUM statistic for a fall in the residual variance of the RON crossed its threshold at the 2024-01-05 observation; the change is claimed to lie within the previous 26 weeks, from 2023-07-07.</summary>
+  </entry>
+  <entry>
+    <title>Hungary (HUF): variance fell — the band narrowed (alert 2023-12-15)</title>
+    <link href="./countries/HUN/index.html"/>
+    <id>./alerts/variance/HUN/2023-12-15</id>
+    <updated>2023-12-15T00:00:00Z</updated>
+    <summary>HUF: variance fell — the band narrowed (alert 2023-12-15). Rule: variance. The CUSUM statistic for a fall in the residual variance of the HUF crossed its threshold at the 2023-12-15 observation; the change is claimed to lie within the previous 26 weeks, from 2023-06-16.</summary>
+  </entry>
+  <entry>
+    <title>Turkey (TRY): variance rose — the band widened (alert 2023-12-08)</title>
+    <link href="./countries/TUR/index.html"/>
+    <id>./alerts/variance/TUR/2023-12-08</id>
+    <updated>2023-12-08T00:00:00Z</updated>
+    <summary>TRY: variance rose — the band widened (alert 2023-12-08). Rule: variance. The CUSUM statistic for a rise in the residual variance of the TRY crossed its threshold at the 2023-12-08 observation; the change is claimed to lie within the previous 26 weeks, from 2023-06-09.</summary>
+  </entry>
+  <entry>
+    <title>Argentina (ARS): variance fell — the band narrowed (alert 2023-11-10)</title>
+    <link href="./countries/ARG/index.html"/>
+    <id>./alerts/variance/ARG/2023-11-10</id>
+    <updated>2023-11-10T00:00:00Z</updated>
+    <summary>ARS: variance fell — the band narrowed (alert 2023-11-10). Rule: variance. The CUSUM statistic for a fall in the residual variance of the ARS crossed its threshold at the 2023-11-10 observation; the change is claimed to lie within the previous 26 weeks, from 2023-05-12.</summary>
+  </entry>
+  <entry>
+    <title>Ukraine (UAH): variance rose — the band widened (alert 2023-11-03)</title>
+    <link href="./countries/UKR/index.html"/>
+    <id>./alerts/variance/UKR/2023-11-03</id>
+    <updated>2023-11-03T00:00:00Z</updated>
+    <summary>UAH: variance rose — the band widened (alert 2023-11-03). Rule: variance. The CUSUM statistic for a rise in the residual variance of the UAH crossed its threshold at the 2023-11-03 observation; the change is claimed to lie within the previous 26 weeks, from 2023-05-05.</summary>
+  </entry>
+</feed>

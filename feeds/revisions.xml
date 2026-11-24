@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Exchange rate regimes: revisions</title>
+  <subtitle>Retrospective changes to dated regime breaks and to country statuses between builds</subtitle>
+  <link href="./feeds/revisions.xml" rel="self"/>
+  <id>./feeds/revisions.xml</id>
+  <updated>2026-11-24T00:00:00Z</updated>
+  <author><name>XKDR Forum</name></author>
+  <entry>
+    <title>United Arab Emirates (AED): data revision, build of 2026-11-24</title>
+    <link href="./countries/ARE/index.html"/>
+    <id>./revisions/ARE/2026-11-24/data/</id>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <summary>With the data available on 2026-11-24, AED: revised BIS data change the recomputed filter output on 8 of 1658 stored weeks from 2026-09-04 (largest difference 0.201 in var_down); stored weeks kept.</summary>
+  </entry>
+  <entry>
+    <title>Brazil (BRL): status change, build of 2026-11-24</title>
+    <link href="./countries/BRA/index.html"/>
+    <id>./revisions/BRA/2026-11-24/status/StableVariance change</id>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <summary>With the data available on 2026-11-24, status changed from 'Stable' to 'Variance change'.</summary>
+  </entry>
+  <entry>
+    <title>Philippines (PHP): status change, build of 2026-11-24</title>
+    <link href="./countries/PHL/index.html"/>
+    <id>./revisions/PHL/2026-11-24/status/New regimeStable</id>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <summary>With the data available on 2026-11-24, status changed from 'New regime' to 'Stable'.</summary>
+  </entry>
+  <entry>
+    <title>Trinidad &amp; Tobago (TTD): status change, build of 2026-11-24</title>
+    <link href="./countries/TTO/index.html"/>
+    <id>./revisions/TTO/2026-11-24/status/StableChange likely</id>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <summary>With the data available on 2026-11-24, status changed from 'Stable' to 'Change likely'.</summary>
+  </entry>
+</feed>

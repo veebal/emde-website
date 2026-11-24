@@ -139,5 +139,11 @@
   },
   "countries/ZAF/index.qmd": {
     "index.html": "0c4c3554"
+  },
+  "methods.qmd": {
+    "methods.html": "637ea9e6"
+  },
+  "subscribe.qmd": {
+    "subscribe.html": "1a4f652b"
   }
 }

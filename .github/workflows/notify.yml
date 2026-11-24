@@ -1,0 +1,40 @@
+# Email the latest feed entries. Disabled by default: it runs only when started by hand
+# (workflow_dispatch). To enable on a schedule, add a `schedule:` trigger after the build.
+# Repository secrets to set before use:
+#   SMTP_SERVER, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD   the sending account
+#   NOTIFY_FROM                                           the From: address
+#   NOTIFY_TO                                             comma-separated recipients
+name: notify
+on:
+  workflow_dispatch:
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract the newest entries from the feeds
+        id: feeds
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import xml.etree.ElementTree as ET
+          ns = {'a': 'http://www.w3.org/2005/Atom'}
+          out = []
+          for name in ('alerts', 'revisions'):
+              root = ET.parse(f'feeds/{name}.xml').getroot()
+              out.append(f'== {name} ==')
+              for e in root.findall('a:entry', ns)[:10]:
+                  out.append(e.find('a:title', ns).text + '\n  ' + e.find('a:summary', ns).text)
+          body = '\n'.join(out).replace('%', '%25').replace('\n', '%0A')
+          print(f'body={body}')
+          PY
+      - name: Send
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "Exchange rate regimes: latest alerts and revisions"
+          from: ${{ secrets.NOTIFY_FROM }}
+          to: ${{ secrets.NOTIFY_TO }}
+          body: ${{ steps.feeds.outputs.body }}

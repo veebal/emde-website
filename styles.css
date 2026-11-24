@@ -150,3 +150,34 @@ td {
   border-bottom: 1px solid var(--xkdr-lightgray);
   padding: 0.75rem;
 }
+/* Status badges and the map legend (colour is always paired with the label) */
+.status-badge {
+  display: inline-block; padding: 0.15em 0.6em; border-radius: 4px; font-size: 0.85rem; font-weight: 600;
+  color: #1c1c1c; border: 1px solid transparent; margin-right: 0.5em; margin-bottom: 0.3em; white-space: nowrap;
+}
+.status-new    { background: #e34948; color: #ffffff; }
+.status-variance { background: #6250d6; color: #ffffff; }
+.status-likely { background: #eda100; }
+.status-stable { background: #1baf7a; color: #ffffff; }
+.status-ended  { background: #9a9a9a; color: #ffffff; }
+.status-na     { background: #e0e0e0; }
+.status-legend { margin: 0.5rem 0 0.25rem 0; }
+.status-legend .status-badge { font-weight: 500; }
+
+/* Tables on small screens */
+.table-sm td, .table-sm th { padding: 0.4rem; font-size: 0.92rem; }
+@media (max-width: 768px) {
+  body { font-size: 0.98rem; }
+  table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+@media (prefers-color-scheme: dark) {
+  .status-na { color: #1c1c1c; }
+}
+
+/* subscribe forms */
+.subscribe-box { border: 1px solid #ddd; border-radius: 6px; padding: 1rem 1.2rem; margin: 0.8rem 0 1.4rem 0; background: #fafafa; }
+.subscribe-form { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+.subscribe-form label { font-weight: 600; margin-right: 0.2rem; }
+.subscribe-form input[type=email] { flex: 1 1 16rem; padding: 0.45rem 0.6rem; border: 1px solid #bbb; border-radius: 4px; font-size: 1rem; }
+.subscribe-form input[type=submit] { padding: 0.45rem 1rem; border: 0; border-radius: 4px; background: #1f5fa8; color: #fff; font-size: 1rem; cursor: pointer; }
+.subscribe-note { margin: 0.6rem 0 0 0; font-size: 0.92rem; color: #444; }
